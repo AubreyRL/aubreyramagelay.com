@@ -5,14 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Links | Aubrey Ramage-Lay</title>
 <meta name="description" content="Where to find Aubrey Ramage-Lay: studio feed, gallery, books, and support.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 96'%3E%3Cpath d='M15 8 C 5 22, 25 34, 15 48 S 5 74, 15 88' fill='none' stroke='%233e6355' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Grenze:wght@200;300;400&family=IBM+Plex+Mono:wght@300;400&display=swap');
 
 :root {
-  --parchment: #e9e2d3;
-  --parchment-2: #dfd6c3;
-  --edge: #cdc2aa;
+  --parchment: #ded7c5;
+  --parchment-2: #d4cbb6;
+  --edge: #c4b99f;
   --ink: #26231d;
   --ink-2: #5f584b;
   --verdigris: #3e6355;
@@ -105,31 +104,19 @@ a { color: inherit; }
 @media (min-width: 861px) and (max-height: 720px) {
   .spine-list { gap: .85rem; }
   .spine-list a { font-size: .62rem; letter-spacing: .17em; }
-  .serpent { height: 78px; }
 }
 
-.serpent {
+.mark {
   position: absolute;
-  left: -40px;
-  width: 34px;
-  height: 104px;
+  left: -13px;
   top: 0;
+  width: 1px;
+  background: var(--verdigris);
   opacity: 0;
   pointer-events: none;
-  transition: transform .7s cubic-bezier(.4, 0, .15, 1), opacity .5s ease;
+  transition: transform .55s cubic-bezier(.4, 0, .15, 1), height .55s ease, opacity .5s ease;
 }
-.serpent .coil, .serpent .head { fill: var(--verdigris); }
-.serpent .eye { fill: var(--parchment); }
-.serpent .tongue { fill: none; stroke: var(--verdigris); stroke-width: .8; stroke-linecap: round; }
-.serpent.lit { opacity: 1; }
-
-@media (prefers-reduced-motion: no-preference) {
-  .serpent .body { animation: sway 11s ease-in-out infinite; transform-origin: 50% 8%; }
-  @keyframes sway {
-    0%, 100% { transform: rotate(-1.6deg); }
-    50% { transform: rotate(1.6deg); }
-  }
-}
+.mark.lit { opacity: 1; }
 
 .spine-foot {
   font-family: var(--util);
@@ -149,6 +136,7 @@ a { color: inherit; }
 }
 
 .masthead { margin-bottom: clamp(3rem, 7vw, 6rem); max-width: 34ch; }
+
 
 h1 {
   font-family: var(--display);
@@ -479,7 +467,7 @@ a.card:hover { background: var(--parchment-2); }
     padding: .15rem 0;
   }
   .spine-list a.active { border-color: var(--verdigris); color: var(--ink); }
-  .serpent, .spine-foot { display: none; }
+  .mark, .spine-foot { display: none; }
   .monogram { flex: 0 0 auto; }
   .page { padding-top: 5.5rem; }
 }
@@ -491,14 +479,7 @@ a.card:hover { background: var(--parchment-2); }
 <nav class="spine" aria-label="Site sections">
   <a class="monogram" href="index.html" aria-label="Home">ARL</a>
   <div class="spine-nav">
-    <svg class="serpent" viewBox="0 0 34 104" aria-hidden="true">
-      <g class="body">
-        <path class="coil" d="M21.58,12.96 L21.50,13.23 L21.40,13.50 L21.30,13.77 L21.18,14.03 L21.06,14.29 L20.93,14.55 L20.78,14.80 L20.63,15.06 L20.46,15.32 L20.29,15.57 L20.10,15.83 L19.91,16.09 L19.70,16.35 L19.48,16.61 L19.26,16.88 L19.02,17.15 L18.78,17.42 L18.52,17.69 L18.25,17.97 L17.98,18.25 L17.69,18.53 L17.40,18.82 L17.09,19.10 L16.78,19.39 L16.46,19.69 L16.14,19.99 L15.84,20.32 L15.56,20.67 L15.28,21.03 L14.99,21.39 L14.69,21.76 L14.39,22.13 L14.09,22.50 L13.79,22.88 L13.48,23.26 L13.17,23.65 L12.86,24.04 L12.55,24.43 L12.24,24.83 L11.93,25.23 L11.63,25.64 L11.32,26.04 L11.02,26.46 L10.72,26.87 L10.43,27.29 L10.14,27.72 L9.85,28.15 L9.58,28.58 L9.31,29.02 L9.04,29.47 L8.79,29.91 L8.54,30.37 L8.31,30.83 L8.08,31.29 L7.87,31.76 L7.67,32.24 L7.48,32.72 L7.31,33.21 L7.15,33.70 L7.00,34.20 L6.87,34.70 L6.76,35.21 L6.67,35.72 L6.59,36.23 L6.54,36.75 L6.50,37.27 L6.48,37.79 L6.48,38.30 L6.50,38.82 L6.54,39.33 L6.60,39.84 L6.68,40.35 L6.77,40.85 L6.89,41.35 L7.02,41.84 L7.16,42.33 L7.32,42.81 L7.50,43.28 L7.69,43.74 L7.89,44.20 L8.10,44.66 L8.33,45.10 L8.57,45.54 L8.81,45.97 L9.07,46.40 L9.33,46.82 L9.60,47.24 L9.88,47.65 L10.16,48.06 L10.46,48.46 L10.75,48.86 L11.05,49.25 L11.36,49.64 L11.67,50.02 L11.98,50.41 L12.29,50.78 L12.61,51.16 L12.92,51.53 L13.24,51.90 L13.56,52.27 L13.88,52.63 L14.19,52.99 L14.51,53.35 L14.82,53.71 L15.13,54.06 L15.43,54.41 L15.74,54.76 L16.03,55.11 L16.33,55.45 L16.61,55.79 L16.89,56.13 L17.17,56.46 L17.44,56.80 L17.70,57.13 L17.95,57.46 L18.19,57.78 L18.42,58.11 L18.65,58.43 L18.87,58.74 L19.07,59.06 L19.27,59.37 L19.46,59.68 L19.63,59.99 L19.80,60.29 L19.95,60.59 L20.10,60.89 L20.23,61.18 L20.36,61.48 L20.47,61.77 L20.57,62.06 L20.67,62.34 L20.75,62.63 L20.82,62.92 L20.88,63.20 L20.94,63.49 L20.98,63.78 L21.01,64.07 L21.03,64.36 L21.04,64.65 L21.05,64.95 L21.04,65.25 L21.02,65.55 L20.98,65.85 L20.94,66.16 L20.89,66.48 L20.82,66.80 L20.75,67.12 L20.66,67.45 L20.56,67.78 L20.45,68.12 L20.33,68.46 L20.20,68.80 L20.05,69.15 L19.90,69.50 L19.74,69.86 L19.56,70.22 L19.38,70.58 L19.19,70.94 L18.98,71.31 L18.78,71.68 L18.56,72.05 L18.34,72.42 L18.11,72.80 L17.87,73.18 L17.63,73.56 L17.38,73.94 L17.13,74.32 L16.88,74.71 L16.62,75.09 L16.37,75.48 L16.11,75.87 L15.84,76.26 L15.58,76.65 L15.32,77.04 L15.06,77.44 L14.81,77.83 L14.55,78.23 L14.30,78.62 L14.05,79.02 L13.80,79.42 L13.56,79.81 L13.33,80.21 L13.10,80.61 L12.88,81.01 L12.66,81.41 L12.45,81.82 L12.25,82.22 L12.06,82.62 L11.88,83.02 L11.71,83.42 L11.55,83.83 L11.40,84.23 L11.25,84.63 L11.13,85.03 L11.01,85.43 L10.90,85.83 L10.81,86.24 L10.73,86.63 L10.66,87.03 L10.61,87.43 L10.57,87.83 L10.54,88.22 L10.52,88.62 L10.52,89.01 L10.53,89.40 L10.56,89.79 L10.60,90.17 L10.65,90.55 L10.71,90.94 L10.79,91.32 L10.88,91.69 L10.98,92.07 L11.09,92.44 L11.22,92.81 L11.35,93.18 L11.47,93.56 L11.60,93.93 L11.74,94.31 L11.89,94.68 L12.19,95.00 L12.19,95.00 L12.17,94.57 L12.02,94.20 L11.88,93.83 L11.76,93.46 L11.64,93.09 L11.57,92.72 L11.51,92.34 L11.46,91.97 L11.42,91.60 L11.39,91.23 L11.38,90.86 L11.38,90.50 L11.39,90.14 L11.41,89.78 L11.44,89.42 L11.49,89.07 L11.55,88.71 L11.62,88.36 L11.70,88.01 L11.79,87.66 L11.90,87.31 L12.01,86.97 L12.14,86.62 L12.27,86.27 L12.42,85.93 L12.58,85.59 L12.75,85.24 L12.93,84.90 L13.12,84.56 L13.31,84.21 L13.52,83.87 L13.74,83.53 L13.96,83.18 L14.19,82.84 L14.43,82.50 L14.68,82.15 L14.94,81.80 L15.20,81.46 L15.47,81.11 L15.74,80.77 L16.02,80.42 L16.30,80.07 L16.59,79.72 L16.89,79.37 L17.18,79.02 L17.48,78.66 L17.78,78.31 L18.08,77.96 L18.39,77.60 L18.69,77.25 L19.00,76.89 L19.30,76.53 L19.61,76.17 L19.91,75.81 L20.21,75.44 L20.51,75.08 L20.80,74.71 L21.09,74.34 L21.38,73.97 L21.66,73.59 L21.94,73.22 L22.21,72.84 L22.48,72.46 L22.74,72.07 L22.99,71.69 L23.23,71.30 L23.47,70.90 L23.70,70.51 L23.92,70.10 L24.12,69.70 L24.32,69.29 L24.51,68.88 L24.68,68.46 L24.84,68.04 L24.99,67.61 L25.13,67.18 L25.25,66.75 L25.36,66.31 L25.46,65.86 L25.54,65.42 L25.60,64.97 L25.65,64.52 L25.68,64.06 L25.69,63.60 L25.69,63.15 L25.67,62.69 L25.64,62.23 L25.59,61.77 L25.52,61.31 L25.44,60.85 L25.35,60.40 L25.24,59.94 L25.11,59.49 L24.97,59.04 L24.82,58.59 L24.66,58.15 L24.48,57.71 L24.29,57.27 L24.09,56.83 L23.89,56.40 L23.67,55.96 L23.44,55.54 L23.21,55.11 L22.97,54.69 L22.72,54.27 L22.46,53.85 L22.20,53.44 L21.93,53.03 L21.66,52.62 L21.39,52.21 L21.11,51.81 L20.83,51.40 L20.55,51.00 L20.27,50.61 L19.98,50.21 L19.70,49.82 L19.42,49.43 L19.14,49.04 L18.86,48.66 L18.58,48.28 L18.31,47.90 L18.04,47.52 L17.78,47.15 L17.52,46.78 L17.27,46.41 L17.03,46.05 L16.79,45.69 L16.56,45.33 L16.34,44.98 L16.13,44.63 L15.93,44.29 L15.73,43.95 L15.55,43.62 L15.38,43.29 L15.22,42.96 L15.07,42.64 L14.93,42.33 L14.80,42.03 L14.69,41.73 L14.59,41.43 L14.49,41.15 L14.41,40.87 L14.34,40.59 L14.29,40.33 L14.24,40.07 L14.20,39.81 L14.17,39.57 L14.16,39.32 L14.15,39.08 L14.15,38.85 L14.16,38.62 L14.18,38.39 L14.20,38.16 L14.24,37.93 L14.28,37.70 L14.33,37.47 L14.39,37.24 L14.46,37.01 L14.54,36.77 L14.63,36.53 L14.73,36.28 L14.84,36.03 L14.96,35.77 L15.09,35.50 L15.23,35.24 L15.38,34.96 L15.54,34.68 L15.72,34.39 L15.90,34.10 L16.10,33.81 L16.31,33.51 L16.53,33.20 L16.75,32.89 L16.99,32.57 L17.24,32.25 L17.50,31.93 L17.76,31.60 L18.04,31.27 L18.32,30.93 L18.60,30.59 L18.90,30.24 L19.20,29.89 L19.50,29.54 L19.81,29.19 L20.13,28.83 L20.45,28.46 L20.77,28.10 L21.09,27.73 L21.41,27.35 L21.74,26.97 L22.06,26.59 L22.38,26.20 L22.71,25.81 L23.00,25.40 L23.25,24.95 L23.51,24.50 L23.75,24.04 L23.99,23.58 L24.23,23.12 L24.46,22.66 L24.68,22.19 L24.89,21.72 L25.09,21.25 L25.29,20.78 L25.47,20.30 L25.64,19.82 L25.80,19.34 L25.94,18.86 L26.07,18.37 L26.19,17.88 L26.29,17.39 L26.38,16.90 L26.45,16.42 L26.50,15.93 L26.53,15.44 L26.55,14.95 L26.54,14.47 L26.52,13.99 L26.48,13.51 L26.42,13.04 Z"/>
-        <ellipse class="head" cx="24.00" cy="12.2" rx="3.5" ry="4.4"/>
-        <circle class="eye" cx="25.50" cy="10.8" r="0.85"/>
-        <path class="tongue" d="M24.00,8 L24.00,3.4 M24.00,3.4 L22.10,1.2 M24.00,3.4 L25.90,1.2"/>
-      </g>
-    </svg>
+    <span class="mark" aria-hidden="true"></span>
     <ul class="spine-list">
       <li><a href="index.html#recent" data-key="recent">Recent</a></li>
       <li><a href="index.html#mythology" data-key="mythology">Mythology</a></li>
@@ -561,28 +542,32 @@ a.card:hover { background: var(--parchment-2); }
 (function () {
   'use strict';
 
-  /* ---------- serpent marker ---------- */
+  /* ---------- margin marker ---------- */
 
   var spineList = document.querySelector('.spine-list');
-  var serpent = document.querySelector('.serpent');
+  var mark = document.querySelector('.mark');
   var links = spineList ? Array.prototype.slice.call(spineList.querySelectorAll('a')) : [];
 
-  function moveSerpent(el) {
-    if (!serpent || !el || window.innerWidth <= 860) return;
-    var h = serpent.getBoundingClientRect().height || 104;
-    var top = el.offsetTop + el.offsetHeight / 2 - h / 2;
-    serpent.style.transform = 'translateY(' + top + 'px)';
-    serpent.classList.add('lit');
+  function moveMark(el) {
+    if (!mark || !el || window.innerWidth <= 860) return;
+    mark.style.transform = 'translateY(' + el.offsetTop + 'px)';
+    mark.style.height = el.offsetHeight + 'px';
+    mark.classList.add('lit');
   }
 
   function setActive(el) {
     links.forEach(function (a) { a.classList.toggle('active', a === el); });
-    moveSerpent(el);
+    moveMark(el);
   }
 
   var pageKey = document.body.getAttribute('data-page');
   var pageLink = pageKey ? spineList && spineList.querySelector('[data-key="' + pageKey + '"]') : null;
   if (pageLink) setActive(pageLink);
+
+  window.addEventListener('resize', function () {
+    var current = spineList && spineList.querySelector('a.active');
+    if (current) moveMark(current);
+  });
 
   /* ---------- scrollspy on the gallery ---------- */
 
@@ -598,17 +583,12 @@ a.card:hover { background: var(--parchment-2); }
     series.forEach(function (s) { spy.observe(s); });
   }
 
-  window.addEventListener('resize', function () {
-    var current = spineList && spineList.querySelector('a.active');
-    if (current) moveSerpent(current);
-  });
-
   /* ---------- empty image slots ---------- */
 
   Array.prototype.forEach.call(document.querySelectorAll('figure.work img'), function (img) {
-    function mark() { img.closest('figure').classList.add('empty'); }
-    img.addEventListener('error', mark);
-    if (img.complete && img.naturalWidth === 0) mark();
+    function flag() { img.closest('figure').classList.add('empty'); }
+    img.addEventListener('error', flag);
+    if (img.complete && img.naturalWidth === 0) flag();
   });
 
   /* ---------- lightbox ---------- */
@@ -634,7 +614,7 @@ a.card:hover { background: var(--parchment-2); }
       var fig = src.closest('figure');
       var t = fig.querySelector('.t');
       var d = fig.querySelector('.d');
-      boxCap.textContent = [t && t.textContent, d && d.textContent].filter(Boolean).join('  ·  ');
+      boxCap.textContent = [t && t.textContent, d && d.textContent].filter(Boolean).join('  \u00b7  ');
       box.classList.add('open');
       document.body.style.overflow = 'hidden';
     }
