@@ -27,8 +27,9 @@ bar into an offset echo.
 
 ## The paintings
 
-73 works are in place: 26 Modern Mythology, 22 Ophic Metamorphosis,
-11 Mythic Landscapes, 9 Universal Meditations and 5 Fractured Visions. The two catalogue series
+73 works are in place. Mythic Landscapes leads the gallery as the most
+recent body of work, followed by 26 Modern Mythology, 22 Ophic Metamorphosis,
+9 Universal Meditations and 5 Fractured Visions. The two catalogue series
 carry dimensions and prices; Universal Meditations and Fractured Visions
 have titles only, awaiting dimensions, years and prices.
 To remove prices, delete every line matching `<span class="p">...</span>`.
@@ -36,6 +37,24 @@ To remove prices, delete every line matching `<span class="p">...</span>`.
 Catalogue images are 664px (Modern Mythology) and 864px (Ophic) on the long
 edge, which is fine at gallery size but soft when opened full screen.
 Replacing them with originals is a straight swap: same filename, same folder.
+
+## Exposure
+
+Thirty of the 73 files never reached white. The brightest paint in them sat
+well below the top of the range, so every tone underneath was squashed down
+and the work read as murky. Mythic Landscapes was worst affected: Cabin by
+the Pond topped out at 65 percent, The Wrong Train at 58.
+
+`brighten.py` measures each image's real highlight and lifts it to a proper
+white, with a soft shoulder so nothing clips and a capped gain so a genuine
+night scene stays dark. Blacks are untouched. Run it over a folder of new
+photographs before they go in:
+
+    python3 brighten.py incoming/ images/
+
+This recovers what the camera lost. It cannot invent detail that was never
+captured, so anything reshot in even, indirect daylight against a neutral
+wall will still beat a corrected file.
 
 Series without images are listed together in a Forthcoming block at the
 foot of the gallery: Recent Works and Bodies and Water.
