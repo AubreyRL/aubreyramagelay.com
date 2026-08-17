@@ -16,7 +16,8 @@ Taken from the Modern Mythology catalogue: white ground, Space Grotesk,
 and the blue bar (#1973eb) clipping the top of each heading. Each series can
 carry its own accent: Ophic Metamorphosis uses the gold from its catalogue
 (#b8901c), Universal Meditations a muted sage (#7c8d84), Fractured Visions
-a vermillion taken from the postbox (#d4331a). Set with `data-accent`.
+a vermillion taken from the postbox (#d4331a), Mythic Landscapes a storm
+blue (#206593). Set with `data-accent`.
 
 Universal Meditations also carries `data-mood="zen"`: a narrower measure,
 two columns, far more space between works, centred captions and no prices.
@@ -26,8 +27,8 @@ bar into an offset echo.
 
 ## The paintings
 
-62 works are in place: 26 Modern Mythology, 22 Ophic Metamorphosis,
-9 Universal Meditations and 5 Fractured Visions. The two catalogue series
+73 works are in place: 26 Modern Mythology, 22 Ophic Metamorphosis,
+11 Mythic Landscapes, 9 Universal Meditations and 5 Fractured Visions. The two catalogue series
 carry dimensions and prices; Universal Meditations and Fractured Visions
 have titles only, awaiting dimensions, years and prices.
 To remove prices, delete every line matching `<span class="p">...</span>`.
@@ -37,7 +38,7 @@ edge, which is fine at gallery size but soft when opened full screen.
 Replacing them with originals is a straight swap: same filename, same folder.
 
 Series without images are listed together in a Forthcoming block at the
-foot of the gallery: Recent Works, Mythic Landscapes, Bodies and Water.
+foot of the gallery: Recent Works and Bodies and Water.
 No empty slots, no dashed boxes. When a series is ready it moves up into
 the gallery proper.
 
